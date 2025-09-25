@@ -1,0 +1,117 @@
+{
+  "en": {
+    "navbar": {
+      "firstName": "Taha",
+      "secondName": "Fawzy",
+      "home": "Home",
+      "about": "About",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "hero": {
+      "title": "Civil Engineer, Section Head, and Quality Leader",
+      "description": "I'm Taha Fawzi, a civil engineer and QA/QC section head based in Riyadh, KSA. With 12+ years of experience, I focus on delivering high-quality, safe, and compliant construction projects while leading teams and ensuring efficiency at every stage.",
+      "openToWork": "Open to work",
+      "buttons": {
+        "downloadCV": "Download CV",
+        "viewWork": "View My Work"
+      }
+    },
+    "certificates": {
+      "title": "My Certifications",
+      "description": "Here are some of my certificates that reflect my continuous learning journey and commitment to professional growth."
+    },
+    "contact": {
+      "head": {
+        "title": "Get In Touch",
+        "description": "Have a project in mind or want to discuss a potential collaboration? Feel free to reach out to me."
+      },
+      "info": {
+        "title": "Contact Information",
+        "location": {
+          "label": "Location",
+          "value": "Egypt, Fayoum City"
+        },
+        "email": {
+          "label": "Email",
+          "value": "contact@tahafawzy.com"
+        },
+        "phone": {
+          "label": "Phone",
+          "value": "+201033961208"
+        }
+      },
+      "form": {
+        "title": "Send Me a Message",
+        "name": "Name",
+        "email": "Email",
+        "message": "Message",
+        "sendBtn": "Send Message"
+      }
+    },
+    "footer": {
+      "firstName": "Taha",
+      "secondName": "Fawzy",
+      "title": "Civil Engineer & Section Head & Quality Leader",
+      "copyright": "© 2025 Taha Fawzy. All rights reserved."
+    }
+  },
+  "ar": {
+    "navbar": {
+      "firstName": "طه",
+      "secondName": "فوزي",
+      "home": "الرئيسية",
+      "about": "من أنا",
+      "projects": "المشاريع",
+      "contact": "تواصل"
+    },
+    "hero": {
+      "title": "مهندس مدني، رئيس قسم، وقائد جودة",
+      "description": "أنا طه فوزي، مهندس مدني ورئيس قسم ضمان الجودة والمراقبة (QA/QC) مقيم في الرياض، السعودية. لدي أكثر من 12 سنة خبرة في إدارة المشاريع وضمان الجودة، أركز على تقديم مشاريع آمنة وملتزمة بالمعايير مع قيادة الفرق وضمان الكفاءة في كل مرحلة.",
+      "openToWork": "متاح للعمل",
+      "buttons": {
+        "downloadCV": "تحميل السيرة الذاتية",
+        "viewWork": "شاهد أعمالي"
+      }
+    },
+    "certificates": {
+      "title": "شهاداتي",
+      "description": "بعض الشهادات التي حصلت عليها والتي تعكس رحلة تعلمي المستمرة وحرصي على تطوير نفسي مهنيًا."
+    },
+    "contact": {
+      "head": {
+        "title": "تواصل معي",
+        "description": "عندك مشروع في بالك أو حابب نناقش تعاون محتمل؟ لا تتردد في التواصل معي."
+      },
+      "info": {
+        "title": "معلومات التواصل",
+        "location": {
+          "label": "الموقع",
+          "value": "مصر، مدينة الفيوم"
+        },
+        "email": {
+          "label": "البريد الإلكتروني",
+          "value": "contact@tahafawzy.com"
+        },
+        "phone": {
+          "label": "رقم الهاتف",
+          "value": "+201033961208"
+        }
+      },
+      "form": {
+        "title": "أرسل لي رسالة",
+        "name": "الاسم",
+        "email": "البريد الإلكتروني",
+        "message": "الرسالة",
+        "sendBtn": "إرسال"
+      }
+    },
+    "footer": {
+      "firstName": "طه",
+      "secondName": "فوزي",
+      "title": "مهندس مدني & رئيس قسم & قائد جودة",
+      "copyright": "© 2025 طه فوزي. جميع الحقوق محفوظة."
+    }
+  }
+}
+
