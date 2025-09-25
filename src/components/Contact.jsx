@@ -192,9 +192,9 @@ function Contact() {
                   <button
                     type="submit"
                     disabled={state.submitting}
-                    className="bg-[rgb(39,96,143)] text-white hover:bg-[rgb(32,80,119)] cursor-pointer hover:-translate-y-1 hover:shadow-[0_3px_10px_rgba(34,211,238,0.9)] transition duration-300 rounded-lg py-3 w-full"
+                    className="bg-[rgb(39,96,143)] flex justify-center items-center gap-2 text-white hover:bg-[rgb(32,80,119)] cursor-pointer hover:-translate-y-1 hover:shadow-[0_3px_10px_rgba(34,211,238,0.9)] transition duration-300 rounded-lg py-3 w-full"
                   >
-                    <i className="fas fa-paper-plane mr-2"></i>
+                    <i className="fas fa-paper-plane"></i>
                     {state.submitting ? "submitting" : "Send Message"}
                   </button>
                 </form>

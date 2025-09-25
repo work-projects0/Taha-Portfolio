@@ -16,17 +16,17 @@ function Navbar() {
     }
   }, [theme]);
 
-  const [lang, setLang] = useState(localStorage.getItem("lang") ?? "ar");
+  const [lang, setLang] = useState(localStorage.getItem("lang") ?? "en");
 
   const toggleLang = () => {
-    const newLang = lang === "ar" ? "en" : "ar";
+    const newLang = lang === "en" ? "ar" : "en";
     setLang(newLang);
     localStorage.setItem("lang", newLang);
-    document.documentElement.dir = newLang === "ar" ? "rtl" : "ltr";
+    document.documentElement.dir = newLang === "en" ? "ltr" : "rtl";
   };
 
   useEffect(() => {
-    document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+    document.documentElement.dir = lang === "en" ? "ltr" : "rtl";
   }, [lang]);
 
   return (
@@ -100,7 +100,7 @@ function Navbar() {
             className="bg-[var(--nav-bg)] text-[var(--text-subtitle)] hover:text-[var(--text-title)] p-2 hidden md:flex justify-center items-center border-[0.1px] border-blue-900 hover:border-blue-700 active:scale-90 cursor-pointer rounded-full transition duration-200"
           >
             <span className="flex justify-between items-center w-5 h-5">
-              {lang === "ar" ? "EN" : "AR"}
+              {lang === "en" ? "AR" : "EN"}
             </span>
           </button>
 

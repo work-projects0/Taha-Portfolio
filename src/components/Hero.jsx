@@ -22,7 +22,7 @@ function Hero() {
     primary:
       "bg-blue-600 py-2 px-4 rounded-md hover:-translate-y-1 transition duration-300 hover:bg-blue-700 hover:shadow-2xl",
     secondary:
-    "bg-[rgb(39,96,143)] hover:bg-[rgb(32,80,119)] hover:-translate-y-1 hover:shadow-[0_3px_10px_rgba(34,211,238,0.9)] transition duration-300 rounded-lg py-3 px-4 w-full",
+      "bg-[rgb(39,96,143)] hover:bg-[rgb(32,80,119)] hover:-translate-y-1 hover:shadow-[0_3px_10px_rgba(34,211,238,0.9)] transition duration-300 rounded-lg py-3 px-4 w-full",
   };
   const state = {
     openToWork: "bg-green-600 py-0.5 px-3 rounded-full",
@@ -35,10 +35,9 @@ function Hero() {
       id="Home"
       className="min-h-[80vh] bg-[var(--bg-primary)] text-[var(--text-main-dark)] relative isolate transform-gpu flex items-center"
     >
-      {/* <StarfieldBackground />{" "} */}
       <div className="w-full flex mt-10 md:mt-0 flex-col md:flex-row justify-between items-center px-3 sm:px-10 md:px-2 lg:px-24 xl:px-36">
         {/* Left-Section */}
-        <div data-aos="fade-right" className="space-y-10 ">
+        <div className="space-y-10 ">
           <div className="flex items-end">
             <img
               src={personalPhoto2}
@@ -172,7 +171,7 @@ function Hero() {
           </div>
         </div>
         {/* Right-Section */}
-        <div data-aos="fade-left" className="sm:w-[500px]">
+        <div className="sm:w-[500px]">
           <Lottie animationData={build} loop={true} />
         </div>
       </div>
