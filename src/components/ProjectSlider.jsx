@@ -34,7 +34,7 @@ function ProjectSlider() {
   return (
     <div
       id="Certifications"
-      className="bg-[var(--bg-primary)] pt-24 space-y-5 sm:space-y-10 text-center"
+      className="bg-[var(--bg-primary)] space-y-5 sm:space-y-10 text-center"
     >
       <div
         data-aos="fade-up"

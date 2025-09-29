@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,11 +17,13 @@ function Navbar() {
     }
   }, [theme]);
 
+  const { t, i18n } = useTranslation();
   const [lang, setLang] = useState(localStorage.getItem("lang") ?? "en");
 
   const toggleLang = () => {
     const newLang = lang === "en" ? "ar" : "en";
     setLang(newLang);
+    i18n.changeLanguage(newLang);
     localStorage.setItem("lang", newLang);
     document.documentElement.dir = newLang === "en" ? "ltr" : "rtl";
   };
@@ -33,33 +36,38 @@ function Navbar() {
     <header id="Navbar" className="bg-[var(--bg-primary)]  mx-auto">
       <div className="flex justify-between items-center pt-6 px-3 sm:px-10 md:px-2 lg:px-24 xl:px-36">
         <Link to="/" className="text-2xl sm:text-3xl font-bold">
-          <span className="text-[var(--text-title)]">Taha</span>
-          <span className="text-[var(--nav-text)]">Fawzy</span>
+          <span className="text-[var(--text-title)]">
+            {t("navbar.firstName")}
+          </span>
+          {i18n.language === "ar" && " "}
+          <span className="text-[var(--nav-text)]">
+            {t("navbar.secondName")}
+          </span>
         </Link>
 
         <nav className="bg-[var(--nav-bg)] font-bold border border-[#313134] text-[var(--text-title)] px-2 md:px-4 lg:px-8 py-3 hidden md:flex justify-center items-center gap-5 sm:gap-10 rounded-full">
           <a href="#About" className="relative group">
             <span className="absolute left-0 -bottom-[1px] h-0.5 w-0 bg-[var(--nav-text)] transition-all duration-300 group-hover:w-full"></span>
             <span className=" group-hover:text-[var(--nav-text)] transition duration-300">
-              About
+              {t("navbar.about")}
             </span>
           </a>
           <a href="#Projects" className="relative group">
             <span className="absolute left-0 -bottom-[1px] h-0.5 w-0 bg-[var(--nav-text)] transition-all duration-300 group-hover:w-full"></span>
             <span className=" group-hover:text-[var(--nav-text)] transition duration-300">
-              Projects
+              {t("navbar.projects")}
             </span>
           </a>
           <a href="#Certifications" className="relative group">
             <span className="absolute left-0 -bottom-[1px] h-0.5 w-0 bg-[var(--nav-text)] transition-all duration-300 group-hover:w-full"></span>
             <span className=" group-hover:text-[var(--nav-text)] transition duration-300">
-              Certifications
+              {t("navbar.certifications")}
             </span>
           </a>
           <a href="#Contact" className="relative group">
             <span className="absolute left-0 -bottom-[1px] h-0.5 w-0 bg-[var(--nav-text)] transition-all duration-300 group-hover:w-full"></span>
             <span className=" group-hover:text-[var(--nav-text)] transition duration-300">
-              Contact
+              {t("navbar.contact")}
             </span>
           </a>
         </nav>
@@ -175,25 +183,25 @@ function Navbar() {
             href="#About"
             className="hover:bg-zinc-700 rounded-md transition duration-300 p-2"
           >
-            About
+            {t("navbar.about")}
           </a>
           <a
             href="#Projects"
             className="hover:bg-zinc-700 rounded-md transition duration-300 p-2"
           >
-            Projects
+            {t("navbar.projects")}
           </a>
           <a
             href="#Certifications"
             className="hover:bg-zinc-700 rounded-md transition duration-300 p-2"
           >
-            Certifications
+            {t("navbar.certifications")}
           </a>
           <a
             href="#Contact"
             className="hover:bg-zinc-700 rounded-md transition duration-300 p-2"
           >
-            Contact
+            {t("navbar.contact")}
           </a>
         </div>
       </div>

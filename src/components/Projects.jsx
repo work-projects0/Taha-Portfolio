@@ -1,13 +1,12 @@
-import cardImage from "../assets/images/cardImage.png";
 import CV from "../assets/files/TAHA FAWZY, CV.pdf";
 import { Link, useParams } from "react-router-dom";
-// import cardImage2 from "../assets/images/cardImage2.png";
 import cardImage1 from "../assets/images/projects/project1/main.JPG";
 import cardImage2 from "../assets/images/projects/project2/main.JPG";
 import cardImage3 from "../assets/images/projects/project3/main.jpeg";
 import cardImage4 from "../assets/images/projects/project4/main.JPG";
 import cardImage5 from "../assets/images/projects/project5/main.JPG";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const checkTools = {
   completed: "bg-green-500 rounded-full text-center font-semibold w-fit px-3",
@@ -22,75 +21,74 @@ const btns = {
 };
 const tools = "bg-zinc-600 text-center rounded-full px-3";
 
-const myProjects = [
-  {
-    id: 1,
-    imgPath: cardImage1,
-    projectTitle: "Al-Jabr Wedding Hall",
-    description: `       Al-Jabr Wedding Hall is a modern venue designed and built to
-                host elegant weddings and large gatherings. The project focused
-                on high-quality finishing, efficient space planning, and durable
-                structures, creating a luxurious and welcoming atmosphere for
-                guests.`,
-  },
-  {
-    id: 2,
-    imgPath: cardImage2,
-    projectTitle: "Al-Jabr Wedding Hall",
-    description: `       Al-Jabr Wedding Hall is a modern venue designed and built to
-                host elegant weddings and large gatherings. The project focused
-                on high-quality finishing, efficient space planning, and durable
-                structures, creating a luxurious and welcoming atmosphere for
-                guests.`,
-  },
-  {
-    id: 3,
-    imgPath: cardImage3,
-    projectTitle: "Al-Jabr Wedding Hall",
-    description: `       Al-Jabr Wedding Hall is a modern venue designed and built to
-                host elegant weddings and large gatherings. The project focused
-                on high-quality finishing, efficient space planning, and durable
-                structures, creating a luxurious and welcoming atmosphere for
-                guests.`,
-  },
-  {
-    id: 4,
-    imgPath: cardImage4,
-    projectTitle: "Al-Jabr Wedding Hall",
-    description: `       Al-Jabr Wedding Hall is a modern venue designed and built to
-                host elegant weddings and large gatherings. The project focused
-                on high-quality finishing, efficient space planning, and durable
-                structures, creating a luxurious and welcoming atmosphere for
-                guests.`,
-  },
-  {
-    id: 5,
-    imgPath: cardImage5,
-    projectTitle: "Al-Jabr Wedding Hall",
-    description: `       Al-Jabr Wedding Hall is a modern venue designed and built to
-                host elegant weddings and large gatherings. The project focused
-                on high-quality finishing, efficient space planning, and durable
-                structures, creating a luxurious and welcoming atmosphere for
-                guests.`,
-  },
-  {
-    id: 6,
-    imgPath: cardImage5,
-    projectTitle: "Al-Jabr Wedding Hall",
-    description: `       Al-Jabr Wedding Hall is a modern venue designed and built to
-                host elegant weddings and large gatherings. The project focused
-                on high-quality finishing, efficient space planning, and durable
-                structures, creating a luxurious and welcoming atmosphere for
-                guests.`,
-  },
-];
-
 function Projects() {
+  const { t, i18n } = useTranslation();
+
   const [visibleCount, setVisibleCount] = useState(3); // هيبدأ يعرض 2 بس
 
   const handleSeeMore = () => {
     setVisibleCount((prev) => prev + 3); // كل مرة يزود 2
   };
+
+  const myProjects = [
+    {
+      id: 1,
+      imgPath: cardImage1,
+      projectTitle: t("projects.project1.title"),
+      description: t("projects.project1.description"),
+    },
+    {
+      id: 2,
+      imgPath: cardImage2,
+      projectTitle: "Al-Jabr Wedding Hall",
+      description: `       Al-Jabr Wedding Hall is a modern venue designed and built to
+                host elegant weddings and large gatherings. The project focused
+                on high-quality finishing, efficient space planning, and durable
+                structures, creating a luxurious and welcoming atmosphere for
+                guests.`,
+    },
+    {
+      id: 3,
+      imgPath: cardImage3,
+      projectTitle: "Al-Jabr Wedding Hall",
+      description: `       Al-Jabr Wedding Hall is a modern venue designed and built to
+                host elegant weddings and large gatherings. The project focused
+                on high-quality finishing, efficient space planning, and durable
+                structures, creating a luxurious and welcoming atmosphere for
+                guests.`,
+    },
+    {
+      id: 4,
+      imgPath: cardImage4,
+      projectTitle: "Al-Jabr Wedding Hall",
+      description: `       Al-Jabr Wedding Hall is a modern venue designed and built to
+                host elegant weddings and large gatherings. The project focused
+                on high-quality finishing, efficient space planning, and durable
+                structures, creating a luxurious and welcoming atmosphere for
+                guests.`,
+    },
+    {
+      id: 5,
+      imgPath: cardImage5,
+      projectTitle: "Al-Jabr Wedding Hall",
+      description: `       Al-Jabr Wedding Hall is a modern venue designed and built to
+                host elegant weddings and large gatherings. The project focused
+                on high-quality finishing, efficient space planning, and durable
+                structures, creating a luxurious and welcoming atmosphere for
+                guests.`,
+    },
+    {
+      id: 6,
+      imgPath: cardImage5,
+      projectTitle: "Al-Jabr Wedding Hall",
+      description: `       Al-Jabr Wedding Hall is a modern venue designed and built to
+                host elegant weddings and large gatherings. The project focused
+                on high-quality finishing, efficient space planning, and durable
+                structures, creating a luxurious and welcoming atmosphere for
+                guests.`,
+    },
+  ];
+
   return (
     <section
       id="Projects"
@@ -100,11 +98,10 @@ function Projects() {
         <div data-aos="fade-up" className="relative mx-auto max-w-full lg:px-8">
           <div className="mx-auto max-w-xl text-center">
             <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-[var(--text-title)]">
-              My Projects
+              {t("projects.head.title")}
             </h2>
             <p className="mx-auto mt-6 max-w-xl text-lg text-[var(--text-subtitle)]">
-              Here are some of my recent projects that showcase my skills and
-              expertise in web development.
+              {t("projects.head.description")}
             </p>
           </div>
         </div>
@@ -112,11 +109,8 @@ function Projects() {
         <div className="relative z-0 px-2 text-[var(--text-title)] flex flex-wrap justify-center items-start gap-10">
           {myProjects.slice(0, visibleCount).map((item) => {
             return (
-              <div data-aos="zoom-in" className="w-[460px]">
-                <div
-                  key={item.id}
-                  className="bg-[var(--bg-card-dark)] hover:border-cyan-500 hover:-translate-y-0.5 hover:rotate-1 transition duration-300 border border-[var(--border)] shadow-xl rounded-lg"
-                >
+              <div key={item.id} data-aos="zoom-in" className="w-[460px]">
+                <div className="bg-[var(--bg-card-dark)] hover:border-cyan-500 hover:-translate-y-0.5 hover:rotate-1 transition duration-300 border border-[var(--border)] shadow-xl rounded-lg">
                   <div className="transition duration-300 hover:shadow-[0_0_20px_rgba(34,211,238,0.7)]">
                     <img
                       src={item.imgPath}
@@ -137,7 +131,7 @@ function Projects() {
                         to={`/project/${item.id}`}
                         className={`block text-center text-white ${btns.secondary}`}
                       >
-                        <span>View Project</span>{" "}
+                        <span>{t("projects.buttons.button1")}</span>{" "}
                       </Link>
                     </div>
                   </div>
@@ -151,7 +145,9 @@ function Projects() {
             onClick={handleSeeMore}
             className="flex flex-col text-[var(--text-title)] mx-auto items-center cursor-pointer"
           >
-            <span className="text-xl font-bold">See More Projects</span>
+            <span className="text-xl font-bold">
+              {t("projects.buttons.button2")}
+            </span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"

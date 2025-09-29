@@ -18,6 +18,8 @@ import cert9 from "../assets/images/certificates/cert9.jpg";
 import cert10 from "../assets/images/certificates/cert10.jpeg";
 import cert11 from "../assets/images/certificates/cert11.jpg";
 
+import { useTranslation } from "react-i18next";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, EffectCoverflow } from "swiper/modules";
 
@@ -26,6 +28,8 @@ import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
 
 function Certificates() {
+  const { t, i18n } = useTranslation();
+
   const [open, setOpen] = useState(false);
   const [index, setIndex] = useState(0);
 
@@ -50,17 +54,13 @@ function Certificates() {
       id="Certifications"
       className="bg-[var(--bg-primary)] pt-24 space-y-12 sm:space-y-24 text-center"
     >
-      <div
-        data-aos="fade-up"
-        className="relative mx-auto max-w-full lg:px-8"
-      >
+      <div data-aos="fade-up" className="relative mx-auto max-w-full lg:px-8">
         <div className="mx-auto max-w-xl text-center">
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-[var(--text-title)]">
-            My Certifications
+            {t("certificates.title")}
           </h2>
           <p className="mx-auto mt-6 max-w-xl text-lg text-[var(--text-subtitle)]">
-            Here are some of my certificates that reflect my continuous learning
-            journey and commitment to professional growth.
+            {t("certificates.description")}
           </p>
         </div>
       </div>

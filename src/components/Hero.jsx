@@ -3,15 +3,18 @@ import { Typewriter } from "react-simple-typewriter";
 import Lottie from "lottie-react";
 import heroAnimation2 from "../assets/animations/space boy developer.json";
 import build from "../assets/animations/build.json";
-import CV from "../assets/files/ZiadMostafaCV.pdf";
+import CV from "../assets/files/TAHA FAWZY, CV.pdf";
 import personalPhoto from "../assets/images/personalphoto.png";
 import personalPhoto1 from "../assets/images/personalphoto1.jpg";
 import personalPhoto2 from "../assets/images/personalphoto2.jpg";
 import verifiedIcon from "../assets/images/icons8-verified-480.png";
+import { useTranslation } from "react-i18next";
 
 import { useEffect, useState } from "react";
 
 function Hero() {
+  const { t, i18n } = useTranslation();
+
   useEffect(() => {
     window.addEventListener("scroll", () => {
       window.scrollY > 200 ? setshowScrollBtn(false) : setshowScrollBtn(true);
@@ -55,9 +58,8 @@ function Hero() {
           </div>
           <h1 className="text-3xl text-[var(--text-title)] sm:text-4xl max-w-2xl font-bold">
             <Typewriter
-              words={[
-                "Civil Engineer, QA/QC Manager, Consultant & Construction Expert.",
-              ]}
+              key={i18n.language}
+              words={[`${t("hero.title")}`]}
               loop={1}
               cursor
               cursorStyle="|"
@@ -65,30 +67,28 @@ function Hero() {
             />
           </h1>
           <p className="max-w-2xl text-[var(--text-title)]">
-            I'm Taha Fawzi, a Civil Engineer with 12+ years of experience in
-            quality management, supervision, and construction execution across
-            major projects in Egypt and Saudi Arabia. Skilled in leading QA/QC
-            systems, structural inspections, and delivering high-quality
-            residential, commercial, and infrastructure developments
+            {t("hero.description")}
           </p>
           <div
             className="space-x-6 space-y-3 w-full sm:w-1/2 md:w-fit"
             dir="ltr"
           >
             <a
-              href=""
+              href={CV}
               className={`block rtl:text-right ltr:text-left md:inline space-x-2 ${btns.secondary}`}
+              dir="ltr"
               download
             >
               <i className="fas fa-download"></i>
-              <span>Download CV</span>{" "}
+              <span> {t("hero.buttons.downloadCV")}</span>{" "}
             </a>
             <a
               href="#Projects"
               className={`block rtl:text-right ltr:text-left md:inline space-x-2 ${btns.secondary}`}
+              dir="ltr"
             >
               <i className="fas fa-eye"></i>
-              <span>View My Work</span>{" "}
+              <span> {t("hero.buttons.viewWork")}</span>{" "}
             </a>
           </div>
 

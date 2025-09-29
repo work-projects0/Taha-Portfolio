@@ -1,0 +1,96 @@
+{
+  "navbar": {
+    "firstName": "Taha",
+    "secondName": "Fawzy",
+    "about": "About",
+    "projects": "Projects",
+    "certifications": "Certifications",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Civil Engineer, QA/QC Manager, Consultant & Construction Expert.",
+    "description": "I'm Taha Fawzi, a Civil Engineer with 12+ years of experience in quality management, supervision, and construction execution across major projects in Egypt and Saudi Arabia. Skilled in leading QA/QC systems, structural inspections, and delivering high-quality residential, commercial, and infrastructure developments",
+    "openToWork": "Open to work",
+    "buttons": {
+      "downloadCV": "Download CV",
+      "viewWork": "View My Work"
+    }
+  },
+  "cards": {
+    "head": {
+      "title": "Civil Engineering Journey",
+      "description": "With 12+ years of experience in Egypt and Saudi Arabia, I’ve worked on residential, commercial, and infrastructure projects, ensuring quality and impact from planning to completion."
+    },
+    "card1": {
+      "title": "QA/QC Management",
+      "description": "Ensuring top construction quality through inspections, audits, and compliance with international standards."
+    },
+    "card2": {
+      "title": "Construction & Project Management",
+      "description": "Managing projects from planning to handover, controlling time, cost, and stakeholder coordination."
+    },
+    "card3": {
+      "title": "Consultancy & Supervision",
+      "description": "Supervising site execution to ensure compliance with designs, safety, and client requirements."
+    }
+  },
+
+  "certificates": {
+    "title": "My Certifications",
+    "description": "Here are some of my certificates that reflect my continuous learning journey and commitment to professional growth."
+  },
+  "contact": {
+    "head": {
+      "title": "Get In Touch",
+      "description": "Have a project in mind or want to discuss a potential collaboration? Feel free to reach out to me."
+    },
+    "info": {
+      "title": "Contact Information",
+      "location": {
+        "label": "Location",
+        "value": "Egypt, Fayoum City"
+      },
+      "email": {
+        "label": "Email",
+        "value": "contact@tahafawzy.com"
+      },
+      "phone": {
+        "label": "Phone",
+        "value": "+20 103 396 1208"
+      },
+      "follow": "Follow Me"
+    },
+    "form": {
+      "title": "Send Me a Message",
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "btn": {
+        "send": "Send Message",
+        "pending": "submitting"
+      },
+      "succesMessage": " Your Message has been sent successfully"
+    }
+  },
+  "footer": {
+    "firstName": "Taha",
+    "secondName": "Fawzy",
+    "title": "Civil Engineer & Section Head & Quality Leader",
+    "copyright": "© 2025 Taha Fawzy. All rights reserved."
+  },
+
+  "projects": {
+    "head": {
+      "title": "My Projects",
+      "description": "Here are some of my recent projects that showcase my skills and expertise in web development."
+    },
+    "buttons": {
+      "button1": "View Project",
+      "button2": "See More Projects"
+    },
+    "project1": {
+      "title": "Al-Jabr Wedding Hall",
+      "description": "Al-Jabr Wedding Hall is a modern venue designed and built to host elegant weddings and large gatherings. The project focused on high-quality finishing, efficient space planning, and durable structures, creating a luxurious and welcoming atmosphere for guests."
+    }
+  }
+}
