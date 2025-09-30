@@ -42,7 +42,10 @@ function ProjectSlider({ images }) {
           modifier: 2,
           slideShadows: true,
         }}
-        pagination={{ clickable: true }}
+        pagination={{
+          el: ".custom-pagination",
+          clickable: true,
+        }}
         modules={[Pagination, EffectCoverflow]}
         className="max-w-7xl mx-auto px-4"
         data-aos="fade-up"
@@ -105,7 +108,7 @@ function ProjectSlider({ images }) {
             {/* الصورة */}
             <img
               src={images[index]}
-              alt={`image-${index}`}
+              alt={`image-${index+1}`}
               className="max-h-[80vh] mx-auto rounded-lg"
             />
 

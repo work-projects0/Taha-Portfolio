@@ -50,11 +50,15 @@ function PreviewProjects() {
               <div className="flex flex-col md:flex-row gap-5">
                 <div className="space-x-1">
                   <i class="fa-solid fa-location-dot text-blue-500"></i>
-                  <span>Location: {t(`${project.i18nKey}.location`)}</span>
+                  <span>
+                    {t("projects.location")}: {t(`${project.i18nKey}.location`)}
+                  </span>
                 </div>
                 <div className="space-x-1">
                   <i class="fa-solid fa-clock"></i>{" "}
-                  <span>Duration: {t(`${project.i18nKey}.duration`)}</span>
+                  <span>
+                    {t("projects.duration")}: {t(`${project.i18nKey}.duration`)}
+                  </span>
                 </div>
               </div>
               <a
@@ -74,13 +78,16 @@ function PreviewProjects() {
               />
             </div>
           </div>
-          <div className="flex justify-center">
-            <iframe
-              src={project.pdf}
-              className="w-[700px] h-[700px]"
-              height="300px"
-            ></iframe>
-          </div>
+          {project.pdf && (
+            <div className="flex justify-center">
+              <iframe
+                src={project.pdf}
+                className="w-[700px] h-[700px]"
+                height="300px"
+              ></iframe>
+            </div>
+          )}
+
           <ProjectSlider images={project.images} />
         </div>
         <Footer />
