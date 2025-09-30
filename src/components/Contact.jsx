@@ -84,7 +84,7 @@ function Contact() {
                       {" "}
                       {t("contact.info.phone.label")}
                     </h4>
-                    <p> {t("contact.info.phone.value")}</p>
+                    <p dir="ltr"> {t("contact.info.phone.value")}</p>
                   </div>
                 </div>
               </div>

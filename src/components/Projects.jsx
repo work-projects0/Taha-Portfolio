@@ -1,17 +1,7 @@
-import CV from "../assets/files/TAHA FAWZY, CV.pdf";
 import { Link, useParams } from "react-router-dom";
-import cardImage1 from "../assets/images/projects/project1/main.JPG";
-import cardImage2 from "../assets/images/projects/project2/main.JPG";
-import cardImage3 from "../assets/images/projects/project3/main.jpeg";
-import cardImage4 from "../assets/images/projects/project4/main.JPG";
-import cardImage5 from "../assets/images/projects/project5/main.JPG";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-
-const checkTools = {
-  completed: "bg-green-500 rounded-full text-center font-semibold w-fit px-3",
-  underDevelop: "bg-red-500 rounded-full text-center font-semibold w-fit px-3",
-};
+import { myProjects } from "../assets/data/projectsData";
 
 const btns = {
   primary:
@@ -19,7 +9,6 @@ const btns = {
   secondary:
     "bg-[rgb(39,96,143)] hover:bg-[rgb(32,80,119)] hover:-translate-y-1 hover:shadow-[0_3px_10px_rgba(34,211,238,0.9)] transition duration-300 rounded-lg py-3 px-4 w-full",
 };
-const tools = "bg-zinc-600 text-center rounded-full px-3";
 
 function Projects() {
   const { t, i18n } = useTranslation();
@@ -29,65 +18,6 @@ function Projects() {
   const handleSeeMore = () => {
     setVisibleCount((prev) => prev + 3); // كل مرة يزود 2
   };
-
-  const myProjects = [
-    {
-      id: 1,
-      imgPath: cardImage1,
-      projectTitle: t("projects.project1.title"),
-      description: t("projects.project1.description"),
-    },
-    {
-      id: 2,
-      imgPath: cardImage2,
-      projectTitle: "Al-Jabr Wedding Hall",
-      description: `       Al-Jabr Wedding Hall is a modern venue designed and built to
-                host elegant weddings and large gatherings. The project focused
-                on high-quality finishing, efficient space planning, and durable
-                structures, creating a luxurious and welcoming atmosphere for
-                guests.`,
-    },
-    {
-      id: 3,
-      imgPath: cardImage3,
-      projectTitle: "Al-Jabr Wedding Hall",
-      description: `       Al-Jabr Wedding Hall is a modern venue designed and built to
-                host elegant weddings and large gatherings. The project focused
-                on high-quality finishing, efficient space planning, and durable
-                structures, creating a luxurious and welcoming atmosphere for
-                guests.`,
-    },
-    {
-      id: 4,
-      imgPath: cardImage4,
-      projectTitle: "Al-Jabr Wedding Hall",
-      description: `       Al-Jabr Wedding Hall is a modern venue designed and built to
-                host elegant weddings and large gatherings. The project focused
-                on high-quality finishing, efficient space planning, and durable
-                structures, creating a luxurious and welcoming atmosphere for
-                guests.`,
-    },
-    {
-      id: 5,
-      imgPath: cardImage5,
-      projectTitle: "Al-Jabr Wedding Hall",
-      description: `       Al-Jabr Wedding Hall is a modern venue designed and built to
-                host elegant weddings and large gatherings. The project focused
-                on high-quality finishing, efficient space planning, and durable
-                structures, creating a luxurious and welcoming atmosphere for
-                guests.`,
-    },
-    {
-      id: 6,
-      imgPath: cardImage5,
-      projectTitle: "Al-Jabr Wedding Hall",
-      description: `       Al-Jabr Wedding Hall is a modern venue designed and built to
-                host elegant weddings and large gatherings. The project focused
-                on high-quality finishing, efficient space planning, and durable
-                structures, creating a luxurious and welcoming atmosphere for
-                guests.`,
-    },
-  ];
 
   return (
     <section
@@ -119,11 +49,14 @@ function Projects() {
                     />
                     <div className="px-7 py-6">
                       <div className="mb-5">
-                        <h1 className="font-bold">{item.projectTitle}</h1>
+                        <h1 className="font-bold">
+                          {t(`${item.i18nKey}.title`)}
+                        </h1>
                         <p>
-                          {item.description.length > 200
-                            ? item.description.slice(0, 200) + " ..."
-                            : item.description}
+                          {t(`${item.i18nKey}.description`).length > 200
+                            ? t(`${item.i18nKey}.description`).slice(0, 200) +
+                              " ..."
+                            : t(`${item.i18nKey}.description`)}
                         </p>
                       </div>
 

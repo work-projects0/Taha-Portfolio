@@ -48,15 +48,15 @@
       "title": "Contact Information",
       "location": {
         "label": "Location",
-        "value": "Egypt, Fayoum City"
+        "value": "Riyadh, KSA"
       },
       "email": {
         "label": "Email",
-        "value": "contact@tahafawzy.com"
+        "value": "tahashahin75@gmail.com"
       },
       "phone": {
         "label": "Phone",
-        "value": "+20 103 396 1208"
+        "value": "+966 54 931 9867"
       },
       "follow": "Follow Me"
     },
@@ -86,11 +86,14 @@
     },
     "buttons": {
       "button1": "View Project",
-      "button2": "See More Projects"
+      "button2": "See More Projects",
+      "button3": "Download Layout PDF"
     },
     "project1": {
-      "title": "Al-Jabr Wedding Hall",
-      "description": "Al-Jabr Wedding Hall is a modern venue designed and built to host elegant weddings and large gatherings. The project focused on high-quality finishing, efficient space planning, and durable structures, creating a luxurious and welcoming atmosphere for guests."
+      "title": "BELLE VIE NEW ZAYED",
+      "description": "Contributed to the BELLE VIE NEW ZAYED project by EMAAR Misr, one of the largest integrated residential developments in New Zayed City. The project features upscale villas, residential buildings, and advanced infrastructure works, executed by major contractors such as SOLID, REDCON, ELHAZEQ, ICPM, Concrete Plus, and ASGC Group, under the project management of MACE and supervision by Constructive. My role focused on construction supervision and quality assurance, managing a team of engineers, overseeing compliance with project specifications, and ensuring international standards were met across all phases. This included technical coordination, documentation control, and quality oversight, which ensured smooth progress and delivery of high-quality construction works.",
+      "location": "New Zayed, 6th of October, Egypt",
+      "duration": "6 months"
     }
   }
 }

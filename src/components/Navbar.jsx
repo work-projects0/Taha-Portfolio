@@ -45,7 +45,7 @@ function Navbar() {
           </span>
         </Link>
 
-        <nav className="bg-[var(--nav-bg)] font-bold border border-[#313134] text-[var(--text-title)] px-2 md:px-4 lg:px-8 py-3 hidden md:flex justify-center items-center gap-5 sm:gap-10 rounded-full">
+        <nav className="bg-[var(--nav-bg)] font-bold border  border-[#313134] text-[var(--text-title)] px-2 md:px-4 lg:px-8 py-3 hidden md:flex justify-center items-center gap-5 sm:gap-10 rounded-full">
           <a href="#About" className="relative group">
             <span className="absolute left-0 -bottom-[1px] h-0.5 w-0 bg-[var(--nav-text)] transition-all duration-300 group-hover:w-full"></span>
             <span className=" group-hover:text-[var(--nav-text)] transition duration-300">

@@ -1,13 +1,4 @@
 import { useState } from "react";
-import img1 from "../assets/images/projects/project2/img1.PNG";
-import img2 from "../assets/images/projects/project2/img2.JPG";
-import img3 from "../assets/images/projects/project2/img3.JPG";
-import img4 from "../assets/images/projects/project2/img4.PNG";
-import img5 from "../assets/images/projects/project2/img5.PNG";
-import img6 from "../assets/images/projects/project2/img6.PNG";
-import img7 from "../assets/images/projects/project2/img7.PNG";
-import img8 from "../assets/images/projects/project2/img8.jpg";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, EffectCoverflow } from "swiper/modules";
 
@@ -15,22 +6,12 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
 
-function ProjectSlider() {
-    
+function ProjectSlider({ images }) {
   const [open, setOpen] = useState(false);
   const [index, setIndex] = useState(0);
   const lang = localStorage.getItem("lang") || "ar";
+  if (!images || images.length === 0) return null;
 
-  const certificates = [
-    { src: img1, title: "Enactus Fayoum" },
-    { src: img2, title: "Enactus Fayoum" },
-    { src: img3, title: "Enactus Fayoum" },
-    { src: img4, title: "Enactus Fayoum" },
-    { src: img5, title: "Enactus Fayoum" },
-    { src: img6, title: "Enactus Fayoum" },
-    { src: img7, title: "Enactus Fayoum" },
-    { src: img8, title: "Enactus Fayoum" },
-  ];
   return (
     <div
       id="Certifications"
@@ -77,7 +58,7 @@ function ProjectSlider() {
           },
         }}
       >
-        {certificates.map((cert, i) => (
+        {images.map((cert, i) => (
           <SwiperSlide key={i}>
             <div
               className="relative group cursor-pointer rounded-lg overflow-hidden"
@@ -87,13 +68,12 @@ function ProjectSlider() {
               }}
             >
               <img
-                src={cert.src}
-                alt={cert.title}
+                src={images[i]}
+                alt={`image-${i + 1}`}
                 className="w-full h-[200px] sm:h-[250px] object-cover rounded-lg"
               />
               <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute inset-0 "></div>
-            
               </div>
             </div>
           </SwiperSlide>
@@ -124,8 +104,8 @@ function ProjectSlider() {
 
             {/* الصورة */}
             <img
-              src={certificates[index].src}
-              alt={certificates[index].title}
+              src={images[index]}
+              alt={`image-${index}`}
               className="max-h-[80vh] mx-auto rounded-lg"
             />
 
