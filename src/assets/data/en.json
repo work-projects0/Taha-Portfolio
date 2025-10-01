@@ -76,7 +76,8 @@
     "firstName": "Taha",
     "secondName": "Fawzy",
     "title": "Civil Engineer & Section Head & Quality Leader",
-    "copyright": "© 2025 Taha Fawzy. All rights reserved."
+    "copyright": "© 2025 Taha Fawzy. All rights reserved.",
+    "developed": "Developed By"
   },
 
   "projects": {
@@ -89,8 +90,8 @@
       "button2": "See More Projects",
       "button3": "Download Layout PDF"
     },
-    "location":"Location",
-    "duration":"Duration",
+    "location": "Location",
+    "duration": "Duration",
     "project1": {
       "title": "BELLE VIE NEW ZAYED",
       "description": "Contributed to the BELLE VIE NEW ZAYED project by EMAAR Misr, one of the largest integrated residential developments in New Zayed City. The project features upscale villas, residential buildings, and advanced infrastructure works, executed by major contractors such as SOLID, REDCON, ELHAZEQ, ICPM, Concrete Plus, and ASGC Group, under the project management of MACE and supervision by Constructive. My role focused on construction supervision and quality assurance, managing a team of engineers, overseeing compliance with project specifications, and ensuring international standards were met across all phases. This included technical coordination, documentation control, and quality oversight, which ensured smooth progress and delivery of high-quality construction works.",
@@ -114,6 +115,48 @@
       "description": "Supervised and executed the construction of four residential buildings in Phase 4 of DEGLA GARDENS compound. Ensured compliance with project specifications, quality standards, and safety regulations. Coordinated with subcontractors, suppliers, and site teams to maintain workflow efficiency and resolve construction challenges. Conducted site inspections, material testing, and tracked progress to ensure timely completion. Managed construction documentation, reports, and approvals for client and consultant reviews.",
       "location": "6th of October, Egypt",
       "duration": "AUG 2013 – APR 2015"
+    },
+    "project5": {
+      "title": "DOKAN AVENUE Commercial Mall",
+      "description": "A large-scale commercial development featuring a multi-purpose shopping mall designed to be a premier destination for retail and entertainment in Al-Ahsa. The project showcases modern architectural design that integrates spacious retail areas with entertainment and service facilities, enhancing the visitor experience and serving the needs of the local community. As Site Engineer (Playing Manager Role), I was responsible for supervising on-site construction activities, coordinating with subcontractors and project stakeholders, and ensuring strict compliance with quality, safety, and design standards. My role also included managing workforce distribution, material procurement, and project schedules to ensure timely and efficient project delivery.",
+      "location": "Jeddah",
+      "duration": "MAY 2015 – NOV 2019"
+    },
+    "project6": {
+      "title": "Television Monitoring Building",
+      "description": "A critical government security project consisting of four specialized Television Monitoring Buildings for the Prisons Authority, developed to integrate advanced surveillance and control systems. In my role as Site Engineer (Playing Manager Role), I oversaw on-site construction works, coordinated with consultants and stakeholders to resolve technical challenges, and ensured strict adherence to government specifications, safety protocols, and project schedules, achieving the successful delivery of all facilities.",
+      "location": "Jeddah, Makkah, Madinah, and Taif",
+      "duration": "MAY 2015 – NOV 2019"
+    },
+    "project7": {
+      "title": "Al-JabrWedding Hall",
+      "description": "Al-Jabr Wedding Hall is a modern venue designed and constructed to host elegant weddings and large gatherings, with a strong focus on high-quality finishes, efficient space utilization, and sophisticated architectural details to create a luxurious and welcoming atmosphere. As Site Engineer (Playing Manager Role), I supervised the on-site construction works, managed workforce and material resources, and coordinated with consultants and subcontractors to ensure strict adherence to quality standards, safety regulations, and project timelines, delivering a premium facility equipped with advanced lighting, sound, and service systems.",
+      "location": "Makkah",
+      "duration": "MAY 2015 – NOV 2019"
+    },
+    "project8": {
+      "title": "Latifa Al-Mulhim Mosque",
+      "description": "A religious and community development project comprising the construction of Latifa Al-Mulhim Mosque, along with dedicated residential units for the Imam and Muezzin in Al-Rabwa. The project emphasized high-quality finishing, functional design, and adherence to traditional architectural values, providing a spiritual space that accommodates worshippers while ensuring comfortable housing facilities for the mosque’s staff. As Site Engineer (Playing Manager Role), I supervised construction activities, coordinated with stakeholders, and ensured compliance with quality standards, safety regulations, and project timelines to successfully deliver the project.",
+      "location": "Al-Ahsa, Saudi Arabia",
+      "duration": "MAY 2015 – NOV 2019"
+    },
+    "project9": {
+      "title": "The Extension of KKALIS Public Park",
+      "description": "A public urban development project aimed at creating a modern recreational space for the local community in Khalis. The park includes landscaped green areas, pedestrian pathways, seating zones, and family-friendly facilities, designed to promote leisure, outdoor activities, and social interaction. As Site Engineer (Playing Manager Role), I oversaw site works, managed resources and subcontractors, and ensured timely delivery in compliance with safety, quality, and design standards.",
+      "location": "Jeddah",
+      "duration": "MAY 2015 – NOV 2019"
+    },
+    "project10": {
+      "title": "Al-Ahsa Municipality Mosque",
+      "description": "A religious and community project involving the construction of Al-Ahsa Municipality Mosque, designed to serve worshippers with a spacious prayer hall, traditional architectural elements, and modern finishing standards. The project combined functionality with cultural identity, ensuring a spiritual environment that reflects local heritage. As Site Engineer (Playing Manager Role), I supervised on-site construction works, coordinated with consultants and subcontractors, and ensured full compliance with design specifications, safety protocols, and project schedules to successfully deliver the mosque.",
+      "location": "Al-Ahsa, Saudi Arabia",
+      "duration": "MAY 2015 – NOV 2019"
+    },
+    "project11": {
+      "title": "Al-Hayem Offices",
+      "description": "A commercial development project consisting of modern office spaces designed to provide a professional and functional working environment. The project emphasized high-quality finishing, efficient space planning, and contemporary architectural design to meet the needs of businesses and professionals. As Site Engineer (Playing Manager Role), I managed on-site construction activities, coordinated with consultants and subcontractors, and ensured compliance with quality standards, safety regulations, and project timelines for successful project delivery.",
+      "location": "Al-Ahsa, Saudi Arabia",
+      "duration": "MAY 2015 – NOV 2019"
     }
   }
 }

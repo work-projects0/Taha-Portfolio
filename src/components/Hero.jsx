@@ -4,9 +4,7 @@ import Lottie from "lottie-react";
 import heroAnimation2 from "../assets/animations/space boy developer.json";
 import build from "../assets/animations/build.json";
 import CV from "../assets/files/TAHA FAWZY, CV.pdf";
-import personalPhoto from "../assets/images/personalphoto.png";
-import personalPhoto1 from "../assets/images/personalphoto1.jpg";
-import personalPhoto2 from "../assets/images/personalphoto2.jpg";
+import personalPhoto from "../assets/images/personalphoto.jpg";
 import verifiedIcon from "../assets/images/icons8-verified-480.png";
 import { useTranslation } from "react-i18next";
 
@@ -43,7 +41,7 @@ function Hero() {
         <div className="space-y-10 ">
           <div className="flex items-end">
             <img
-              src={personalPhoto2}
+              src={personalPhoto}
               className="rounded-full w-24 h-24 border border-amber-500 p-[1px] shadow-[2px_2px_40px_rgba(203,200,200,0.586)_inset] "
               alt="TahaFawzy-Photo"
             />
@@ -99,10 +97,8 @@ function Hero() {
               rel="noopener noreferrer"
               className="p-3 rounded-full backdrop-blur-lg border border-blue-500/20 bg-gradient-to-tr from-[var(--hero-links)]/60 to-[var(--hero-links)]/40 shadow-lg hover:shadow-2xl hover:shadow-blue-500/30 hover:scale-110 hover:rotate-2 active:scale-95 active:rotate-0 transition-all duration-300 ease-out cursor-pointer hover:border-blue-500/50 hover:bg-gradient-to-tr hover:from-blue-500/10 hover:to-[var(--hero-links)]/40 group relative overflow-hidden"
             >
-              {/* تأثير اللمعة */}
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-500/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-out"></div>
 
-              {/* أيقونة LinkedIn */}
               <div className="relative z-10">
                 <svg
                   className="w-5 h-5  group-hover:text-blue-400 transition-colors duration-300"
@@ -137,7 +133,7 @@ function Hero() {
               </div>
             </a>
             <a
-              href="https://wa.me/201033961208" // 👈 غير الرقم بتاعك هنا
+              href="https://wa.me/966549319867"
               target="_blank"
               className="p-3 rounded-full backdrop-blur-lg border border-green-500/20 bg-gradient-to-tr from-[var(--hero-links)]/60 to-[var(--hero-links)]/40 shadow-lg hover:shadow-2xl hover:shadow-green-500/30 hover:scale-110 hover:rotate-2 active:scale-95 active:rotate-0 transition-all duration-300 ease-out cursor-pointer hover:border-green-500/50 hover:bg-gradient-to-tr hover:from-green-500/10 hover:to-[var(--hero-links)]/40 group relative overflow-hidden"
             >

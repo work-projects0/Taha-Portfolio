@@ -53,8 +53,8 @@ function Projects() {
                           {t(`${item.i18nKey}.title`)}
                         </h1>
                         <p>
-                          {t(`${item.i18nKey}.description`).length > 200
-                            ? t(`${item.i18nKey}.description`).slice(0, 200) +
+                          {t(`${item.i18nKey}.description`).length > 198
+                            ? t(`${item.i18nKey}.description`).slice(0, 198) +
                               " ..."
                             : t(`${item.i18nKey}.description`)}
                         </p>

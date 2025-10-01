@@ -7,6 +7,11 @@ body {
   background-color: var(--bg-secondary);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@400;700&display=swap');
+:lang(ar) {
+  font-family: 'Almarai', sans-serif;
+}
+
 @font-face {
   font-family: "DGAsca";
   src: url("./assets/fonts/DG-Aqsa-italic.ttf") format("truetype");
