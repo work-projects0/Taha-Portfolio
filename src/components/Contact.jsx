@@ -1,5 +1,4 @@
 import Lottie from "lottie-react";
-import ContactUs from "../assets/animations/Contact Us.json";
 import Success from "../assets/animations/success.json";
 import Footer from "./Footer";
 import { useForm, ValidationError } from "@formspree/react";

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { HashLink } from "react-router-hash-link";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -33,7 +34,7 @@ function Navbar() {
   }, [lang]);
 
   return (
-    <header id="Navbar" className="bg-[var(--bg-primary)]  mx-auto">
+    <header id="Navbar" className="bg-[var(--bg-primary)] mx-auto">
       <div className="flex justify-between items-center pt-6 px-3 sm:px-10 md:px-2 lg:px-24 xl:px-36">
         <Link to="/" className="text-2xl sm:text-3xl font-bold">
           <span className="text-[var(--text-title)]">
@@ -46,30 +47,30 @@ function Navbar() {
         </Link>
 
         <nav className="bg-[var(--nav-bg)] font-bold border  border-[#313134] text-[var(--text-title)] px-2 md:px-4 lg:px-8 py-3 hidden md:flex justify-center items-center gap-5 sm:gap-10 rounded-full">
-          <a href="#About" className="relative group">
+          <HashLink smooth to="/#Home" className="relative group">
             <span className="absolute left-0 -bottom-[1px] h-0.5 w-0 bg-[var(--nav-text)] transition-all duration-300 group-hover:w-full"></span>
             <span className=" group-hover:text-[var(--nav-text)] transition duration-300">
               {t("navbar.about")}
             </span>
-          </a>
-          <a href="#Projects" className="relative group">
+          </HashLink>
+          <HashLink smooth to="/#Projects" className="relative group">
             <span className="absolute left-0 -bottom-[1px] h-0.5 w-0 bg-[var(--nav-text)] transition-all duration-300 group-hover:w-full"></span>
             <span className=" group-hover:text-[var(--nav-text)] transition duration-300">
               {t("navbar.projects")}
             </span>
-          </a>
-          <a href="#Certifications" className="relative group">
+          </HashLink>
+          <HashLink smooth to="/#Certifications" className="relative group">
             <span className="absolute left-0 -bottom-[1px] h-0.5 w-0 bg-[var(--nav-text)] transition-all duration-300 group-hover:w-full"></span>
             <span className=" group-hover:text-[var(--nav-text)] transition duration-300">
               {t("navbar.certifications")}
             </span>
-          </a>
-          <a href="#Contact" className="relative group">
+          </HashLink>
+          <HashLink smooth to="/#Contact" className="relative group">
             <span className="absolute left-0 -bottom-[1px] h-0.5 w-0 bg-[var(--nav-text)] transition-all duration-300 group-hover:w-full"></span>
             <span className=" group-hover:text-[var(--nav-text)] transition duration-300">
               {t("navbar.contact")}
             </span>
-          </a>
+          </HashLink>
         </nav>
         <div className="flex gap-3">
           <button
@@ -179,30 +180,34 @@ function Navbar() {
           </button>
         </div>
         <div className="flex flex-col gap-2">
-          <a
-            href="#About"
+          <HashLink
+            smooth
+            to="/#Home"
             className="hover:bg-zinc-700 rounded-md transition duration-300 p-2"
           >
             {t("navbar.about")}
-          </a>
-          <a
-            href="#Projects"
+          </HashLink>
+          <HashLink
+            smooth
+            to="/#Projects"
             className="hover:bg-zinc-700 rounded-md transition duration-300 p-2"
           >
             {t("navbar.projects")}
-          </a>
-          <a
-            href="#Certifications"
+          </HashLink>
+          <HashLink
+            smooth
+            to="/#Certifications"
             className="hover:bg-zinc-700 rounded-md transition duration-300 p-2"
           >
             {t("navbar.certifications")}
-          </a>
-          <a
-            href="#Contact"
+          </HashLink>
+          <HashLink
+            smooth
+            to="/#Contact"
             className="hover:bg-zinc-700 rounded-md transition duration-300 p-2"
           >
             {t("navbar.contact")}
-          </a>
+          </HashLink>
         </div>
       </div>
     </header>

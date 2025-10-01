@@ -1,11 +1,5 @@
 import { useState } from "react";
-import certificate1 from "../assets/images/certificates/Enactus Fayoum Certificates.jpg";
-import certificate2 from "../assets/images/certificates/Enactus Egypt Certificates.jpg";
-import certificate3 from "../assets/images/certificates/Screenshot 2025-09-19 110441.png";
-import certificate4 from "../assets/images/certificates/Screenshot 2025-09-19 110501.png";
-import certificate5 from "../assets/images/certificates/Screenshot 2025-09-19 110531.png";
-import certificate6 from "../assets/images/certificates/Screenshot 2025-09-19 110556.png";
-import certificate7 from "../assets/images/certificates/WhatsApp Image 2025-09-20 at 2.15.55 PM.jpeg";
+
 import cert1 from "../assets/images/certificates/cert1.jpg";
 import cert2 from "../assets/images/certificates/cert2.jpeg";
 import cert3 from "../assets/images/certificates/cert3.jpg";

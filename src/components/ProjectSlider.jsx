@@ -13,10 +13,7 @@ function ProjectSlider({ images }) {
   if (!images || images.length === 0) return null;
 
   return (
-    <div
-      id="Certifications"
-      className="bg-[var(--bg-primary)] space-y-5 sm:space-y-10 text-center"
-    >
+    <div className="bg-[var(--bg-primary)] space-y-5 sm:space-y-10 text-center">
       <div
         data-aos="fade-up"
         className="relative mx-auto max-w-full p-10 lg:px-8"
@@ -108,11 +105,9 @@ function ProjectSlider({ images }) {
             {/* الصورة */}
             <img
               src={images[index]}
-              alt={`image-${index+1}`}
+              alt={`image-${index + 1}`}
               className="max-h-[80vh] mx-auto rounded-lg"
             />
-
-            {/* العنوان */}
           </div>
         </div>
       )}

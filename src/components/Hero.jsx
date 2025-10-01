@@ -1,7 +1,5 @@
-import StarfieldBackground from "./Particles";
 import { Typewriter } from "react-simple-typewriter";
 import Lottie from "lottie-react";
-import heroAnimation2 from "../assets/animations/space boy developer.json";
 import build from "../assets/animations/build.json";
 import CV from "../assets/files/TAHA FAWZY, CV.pdf";
 import personalPhoto from "../assets/images/personalphoto.jpg";

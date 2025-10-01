@@ -3,6 +3,7 @@ import Footer from "./Footer";
 import ProjectSlider from "./projectSlider";
 import { myProjects } from "../assets/data/projectsData";
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
 
 function PreviewProjects() {
   const { t, i18n } = useTranslation();
@@ -15,6 +16,9 @@ function PreviewProjects() {
       "bg-[rgb(39,96,143)] hover:bg-[rgb(32,80,119)] hover:-translate-y-1 hover:shadow-[0_3px_10px_rgba(34,211,238,0.9)] transition duration-300 rounded-lg py-3 px-4 w-full",
   };
 
+  const [open, setOpen] = useState(false); // 👈 مودال
+  const [selectedImg, setSelectedImg] = useState(null);
+
   const project = myProjects.find((p) => p.id === parseInt(id));
 
   if (!project) {
@@ -25,10 +29,7 @@ function PreviewProjects() {
     );
   }
   return (
-    <section
-      id="Projects"
-      className="bg-[var(--bg-primary)] text-[var(--text-title)] pt-36 px-3 sm:px-10 md:px-2 lg:px-24 xl:px-36"
-    >
+    <section className="bg-[var(--bg-primary)] text-[var(--text-title)] pt-36 px-3 sm:px-10 md:px-2 lg:px-24 xl:px-36">
       <div className="space-y-24">
         <div data-aos="fade-up" className="relative mx-auto max-w-full lg:px-8">
           <div className="mx-auto max-w-xl text-center">
@@ -70,7 +71,13 @@ function PreviewProjects() {
                 <span>{t("projects.buttons.button3")}</span>{" "}
               </a>
             </div>
-            <div>
+            <div
+              className="cursor-pointer"
+              onClick={() => {
+                setSelectedImg(project.imgPath);
+                setOpen(true);
+              }}
+            >
               <img
                 src={project.imgPath}
                 className="w-[600px] rounded-md"
@@ -92,6 +99,35 @@ function PreviewProjects() {
         </div>
         <Footer />
       </div>
+      {open && selectedImg && (
+        <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50">
+          <div className="relative rounded-xl p-4 max-w-7xl w-[90%] shadow-lg">
+            {/* زرار إغلاق */}
+            <button
+              onClick={() => setOpen(false)}
+              className="absolute top-4 right-4 sm:top-8 sm:right-8 text-xl sm:text-3xl font-black cursor-pointer text-red-700 hover:text-red-400 transition duration-500 hover:rotate-180 rounded-full w-8 h-8 flex items-center justify-center"
+            >
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 352 512"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path>
+              </svg>
+            </button>
+            {/* الصورة */}
+            <img
+              src={selectedImg}
+              alt="preview"
+              className="max-h-[80vh] mx-auto rounded-lg"
+            />
+          </div>
+        </div>
+      )}
     </section>
   );
 }

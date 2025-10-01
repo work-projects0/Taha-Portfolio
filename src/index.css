@@ -16,14 +16,10 @@ body {
   font-family: "DGAsca";
   src: url("./assets/fonts/DG-Aqsa-italic.ttf") format("truetype");
 }
-@font-face {
-  font-family: "poppins";
-  src: url("./assets/fonts/poppins.medium.ttf") format("truetype");
-}
+
 
 @theme {
   --font-DGAsca: "DGAsca", sans-serif;
-  --font-poppins: "Poppins", sans-serif;
 }
 
 :root {
