@@ -3,14 +3,13 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.jsx";
 import { BrowserRouter } from "react-router-dom";
-import { HashRouter } from "react-router-dom";
 
 import "./components/i18n.js"; // استدعاء الإعداد
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <HashRouter basename="/Taha-Portfolio">
+    <BrowserRouter basename="/Taha-Portfolio">
       <App />
-    </HashRouter>
+    </BrowserRouter>
   </StrictMode>
 );
