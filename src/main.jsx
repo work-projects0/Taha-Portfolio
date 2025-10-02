@@ -9,8 +9,8 @@ import "./components/i18n.js"; // استدعاء الإعداد
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter basename="/Taha-Portfolio">
+    <HashRouter basename="/Taha-Portfolio">
       <App />
-    </BrowserRouter>
+    </HashRouter>
   </StrictMode>
 );
