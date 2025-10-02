@@ -55,12 +55,12 @@ function PreviewProjects() {
                     {t("projects.location")}: {t(`${project.i18nKey}.location`)}
                   </span>
                 </div>
-                <div className="space-x-1">
+                {/* <div className="space-x-1">
                   <i className="fa-solid fa-clock"></i>{" "}
                   <span>
                     {t("projects.duration")}: {t(`${project.i18nKey}.duration`)}
                   </span>
-                </div>
+                </div> */}
               </div>
               <a
                 href={project.pdf}
