@@ -12,7 +12,7 @@
   ⚡ Built with React, TailwindCSS, Vite for a modern, responsive portfolio experience.
 -->
     <title>TAHA FAWZI | Portfolio</title>
-    <meta http-equiv="refresh" content="0; URL=/Taha-Portfolio/">
+    <!-- <meta http-equiv="refresh" content="0; URL=/Taha-Portfolio/" /> -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -67,6 +67,17 @@
       crossorigin
       href="/Taha-Portfolio/assets/index-m7ax4s6q.css"
     />
+
+    <script>
+      // خليه ياخد أي URL غير موجود ويعيد توجيهه للـ index.html
+      const path =
+        window.location.pathname +
+        window.location.search +
+        window.location.hash;
+      window.location.replace(
+        "/Taha-Portfolio/index.html?" + encodeURIComponent(path)
+      );
+    </script>
   </head>
   <body>
     <!-- 
