@@ -14,7 +14,8 @@
     "buttons": {
       "downloadCV": "Download CV",
       "viewWork": "View My Work"
-    }
+    },
+    "state": "Open to work"
   },
   "cards": {
     "head": {
@@ -26,7 +27,7 @@
       "description": "Ensuring top construction quality through inspections, audits, and compliance with international standards."
     },
     "card2": {
-      "title": "Construction & Project Management",
+      "title": "Construction & Project Execution",
       "description": "Managing projects from planning to handover, controlling time, cost, and stakeholder coordination."
     },
     "card3": {
@@ -75,7 +76,7 @@
   "footer": {
     "firstName": "Taha",
     "secondName": "Fawzy",
-    "title": "Civil Engineer & Section Head & Quality Leader",
+    "title": "Civil Construction Manager | QA/QC Leader | Consultant Engineer",
     "copyright": "© 2025 Taha Fawzy. All rights reserved.",
     "developed": "Developed By"
   },

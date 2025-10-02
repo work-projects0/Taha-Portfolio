@@ -44,6 +44,7 @@ function Projects() {
                   <div className="transition duration-300 hover:shadow-[0_0_20px_rgba(34,211,238,0.7)]">
                     <img
                       src={item.imgPath}
+                      loading="lazy"
                       className="rounded-t-lg h-[250px] w-full"
                       alt=""
                     />

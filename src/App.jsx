@@ -5,9 +5,27 @@ import Projects from "./components/Projects";
 import PreviewProjects from "./components/PreviewProjects";
 import Contact from "./components/Contact";
 import Certificates from "./components/Certificates";
-import { useEffect, useState } from "react";
-import { Routes, Route } from "react-router-dom";
+import { useEffect, useState, useRef } from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  const hasScrolled = useRef(false); // عشان يشتغل مرة واحدة بس
+
+  useEffect(() => {
+    if (pathname.startsWith("/project/")) {
+      if (!hasScrolled.current) {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        hasScrolled.current = true; // أول مرة بس
+      }
+    } else {
+      // رجعت للهوم → اعمل reset
+      hasScrolled.current = false;
+    }
+  }, [pathname]);
+
+  return null;
+}
 function App() {
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -15,10 +33,12 @@ function App() {
     });
   }, []);
   const [showScrollBtn, setshowScrollBtn] = useState(false);
+
   return (
     <>
       <div className="w-[90%] mx-auto border-x border-[var(--border)]">
         <Navbar />
+        <ScrollToTop />
         <Routes>
           <Route
             path="/project/:id"

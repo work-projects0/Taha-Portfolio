@@ -9,7 +9,7 @@ function Footer() {
       <div className="flex flex-col sm:flex-row justify-between items-center gap-1 px-[5%] lg:px-[9%] xl:px-[15%] pb-10">
         <div className="space-y-1 text-center sm:text-start">
           <a href="#Navbar" className="text-2xl sm:text-3xl font-bold">
-            <span>{t("navbar.firstName")}</span>
+            <span>Eng.{t("navbar.firstName")}</span>
             {i18n.language === "ar" && " "}
             <span className="text-[var(--nav-text)]">
               {t("navbar.secondName")}

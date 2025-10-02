@@ -1,10 +1,3 @@
-import cardImage1 from "../images/projects/project1/main.JPG";
-import cardImage2 from "../images/projects/project2/main.JPG";
-import cardImage3 from "../images/projects/project3/main.jpeg";
-import cardImage4 from "../images/projects/project4/main.JPG";
-import cardImage5 from "../images/projects/project5/main.JPG";
-import pdf from "../projects/project1/key plan.pdf";
-
 export const myProjects = [
   {
     id: 1,

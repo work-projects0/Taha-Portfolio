@@ -49,7 +49,7 @@ function Hero() {
                 className="w-5 h-5 "
                 alt="TahaFawzy-Photo"
               />
-              <span className={state.openToWork}>Open to work</span>
+              <span className={state.openToWork}>{t("hero.state")}</span>
             </div>
           </div>
           <h1 className="text-3xl text-[var(--text-title)] sm:text-4xl max-w-2xl font-bold">

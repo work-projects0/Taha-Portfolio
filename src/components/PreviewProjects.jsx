@@ -33,7 +33,7 @@ function PreviewProjects() {
       <div className="space-y-24">
         <div data-aos="fade-up" className="relative mx-auto max-w-full lg:px-8">
           <div className="mx-auto max-w-xl text-center">
-            <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-[var(--text-title)]">
+            <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-[var(--text-title)] ">
               {t(`${project.i18nKey}.title`)}
             </h2>
           </div>
@@ -50,13 +50,13 @@ function PreviewProjects() {
               </p>
               <div className="flex flex-col md:flex-row gap-5">
                 <div className="space-x-1">
-                  <i class="fa-solid fa-location-dot text-blue-500"></i>
+                  <i className="fa-solid fa-location-dot text-blue-500"></i>
                   <span>
                     {t("projects.location")}: {t(`${project.i18nKey}.location`)}
                   </span>
                 </div>
                 <div className="space-x-1">
-                  <i class="fa-solid fa-clock"></i>{" "}
+                  <i className="fa-solid fa-clock"></i>{" "}
                   <span>
                     {t("projects.duration")}: {t(`${project.i18nKey}.duration`)}
                   </span>
@@ -122,6 +122,7 @@ function PreviewProjects() {
             {/* الصورة */}
             <img
               src={selectedImg}
+              loading="lazy"
               alt="preview"
               className="max-h-[80vh] mx-auto rounded-lg"
             />

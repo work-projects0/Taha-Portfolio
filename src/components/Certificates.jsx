@@ -101,6 +101,7 @@ function Certificates() {
               <img
                 src={cert.src}
                 alt={cert.title}
+                loading="lazy"
                 className="w-full h-[200px] sm:h-[250px] object-cover rounded-lg"
               />
               <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -138,6 +139,7 @@ function Certificates() {
 
             {/* الصورة */}
             <img
+              loading="lazy"
               src={certificates[index].src}
               alt={certificates[index].title}
               className="max-h-[80vh] mx-auto rounded-lg"
