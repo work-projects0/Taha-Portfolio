@@ -105,10 +105,11 @@ function Certificates() {
                 className="w-full h-[200px] sm:h-[250px] object-cover rounded-lg"
               />
               <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="absolute inset-0 bg-black/50"></div>
-                <p className="relative text-white font-semibold px-4">
+                <div className="absolute inset-0"></div>
+                {/* className in the top div "bg-black/50" */}
+                {/* <p className="relative text-white font-semibold px-4">
                   {cert.title}
-                </p>
+                </p> */}
               </div>
             </div>
           </SwiperSlide>
