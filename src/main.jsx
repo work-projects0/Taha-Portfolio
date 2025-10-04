@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App.jsx";
 import { BrowserRouter } from "react-router-dom";
 
-import "./components/i18n.js"; // استدعاء الإعداد
+import "./components/i18n.js"; 
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>

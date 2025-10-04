@@ -24,7 +24,7 @@ function ProjectSlider({ images }) {
           </h2>
         </div>
       </div>
-      {/* Swiper Slider */}
+
       <Swiper
         key={lang}
         effect={"coverflow"}
@@ -48,13 +48,13 @@ function ProjectSlider({ images }) {
         data-aos="fade-up"
         breakpoints={{
           0: {
-            slidesPerView: 1.3, // موبايل صغير جداً
+            slidesPerView: 1.3,
           },
           500: {
-            slidesPerView: 2, // من أول تابلت أو موبايل واسع
+            slidesPerView: 2, 
           },
           1024: {
-            slidesPerView: 3, // من أول لابتوب وفوق
+            slidesPerView: 3, 
           },
         }}
       >
@@ -81,11 +81,9 @@ function ProjectSlider({ images }) {
         ))}
       </Swiper>
 
-      {/* Modal */}
       {open && (
         <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50">
           <div className="relative rounded-xl p-4 max-w-7xl w-[90%] shadow-lg">
-            {/* زرار الإغلاق */}
             <button
               onClick={() => setOpen(false)}
               className="absolute top-4 right-4 sm:top-8 sm:right-8 text-xl sm:text-3xl font-black cursor-pointer text-red-700 hover:text-red-400 transition duration-500 hover:rotate-180 rounded-full w-8 h-8 flex items-center justify-center"
@@ -103,7 +101,6 @@ function ProjectSlider({ images }) {
               </svg>
             </button>
 
-            {/* الصورة */}
             <img
               src={images[index]}
               alt={`image-${index + 1}`}

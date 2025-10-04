@@ -27,8 +27,7 @@ function Hero() {
     openToWork: "bg-green-600 py-0.5 px-3 rounded-full",
     Employed: "bg-red-600 py-0.5 px-3 rounded-full",
   };
-  const SocialIcon =
-    "flex justify-center items-center w-10 h-10 bg-white hover:bg-blue-600 border border-gray-300 hover:border-blue-600 text-blue-600 hover:text-white  rounded-full transition duration-300 hover:-translate-y-0.5";
+
   return (
     <div
       id="Home"

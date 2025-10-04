@@ -16,7 +16,7 @@ function PreviewProjects() {
       "bg-[rgb(39,96,143)] hover:bg-[rgb(32,80,119)] hover:-translate-y-1 hover:shadow-[0_3px_10px_rgba(34,211,238,0.9)] transition duration-300 rounded-lg py-3 px-4 w-full",
   };
 
-  const [open, setOpen] = useState(false); // 👈 مودال
+  const [open, setOpen] = useState(false);
   const [selectedImg, setSelectedImg] = useState(null);
 
   const project = myProjects.find((p) => p.id === parseInt(id));
@@ -55,12 +55,6 @@ function PreviewProjects() {
                     {t("projects.location")}: {t(`${project.i18nKey}.location`)}
                   </span>
                 </div>
-                {/* <div className="space-x-1">
-                  <i className="fa-solid fa-clock"></i>{" "}
-                  <span>
-                    {t("projects.duration")}: {t(`${project.i18nKey}.duration`)}
-                  </span>
-                </div> */}
               </div>
               <a
                 href={project.pdf}
@@ -102,7 +96,6 @@ function PreviewProjects() {
       {open && selectedImg && (
         <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50">
           <div className="relative rounded-xl p-4 max-w-7xl w-[90%] shadow-lg">
-            {/* زرار إغلاق */}
             <button
               onClick={() => setOpen(false)}
               className="absolute top-4 right-4 sm:top-8 sm:right-8 text-xl sm:text-3xl font-black cursor-pointer text-red-700 hover:text-red-400 transition duration-500 hover:rotate-180 rounded-full w-8 h-8 flex items-center justify-center"
@@ -119,7 +112,6 @@ function PreviewProjects() {
                 <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path>
               </svg>
             </button>
-            {/* الصورة */}
             <img
               src={selectedImg}
               loading="lazy"

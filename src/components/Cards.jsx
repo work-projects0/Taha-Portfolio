@@ -32,7 +32,6 @@ function Cards() {
     >
       <div className="space-y-24">
         <div
-          // data-aos="fade-up"
           className="relative mx-auto max-w-full lg:px-8"
         >
           <div className="mx-auto max-w-xl text-center">

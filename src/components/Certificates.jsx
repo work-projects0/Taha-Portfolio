@@ -30,17 +30,17 @@ function Certificates() {
   const lang = localStorage.getItem("lang") || "ar";
 
   const certificates = [
-    { src: cert1, title: "Enactus Fayoum" },
-    { src: cert2, title: "Enactus Fayoum" },
-    { src: cert3, title: "Enactus Fayoum" },
-    { src: cert4, title: "Enactus Fayoum" },
-    { src: cert5, title: "Enactus Fayoum" },
-    { src: cert6, title: "Enactus Fayoum" },
-    { src: cert7, title: "Enactus Fayoum" },
-    { src: cert8, title: "Enactus Fayoum" },
-    { src: cert9, title: "Enactus Fayoum" },
-    { src: cert10, title: "Enactus Fayoum" },
-    { src: cert11, title: "Enactus Fayoum" },
+    { src: cert1, title: "Image Title" },
+    { src: cert2, title: "Image Title" },
+    { src: cert3, title: "Image Title" },
+    { src: cert4, title: "Image Title" },
+    { src: cert5, title: "Image Title" },
+    { src: cert6, title: "Image Title" },
+    { src: cert7, title: "Image Title" },
+    { src: cert8, title: "Image Title" },
+    { src: cert9, title: "Image Title" },
+    { src: cert10, title: "Image Title" },
+    { src: cert11, title: "Image Title" },
   ];
 
   return (
@@ -58,7 +58,7 @@ function Certificates() {
           </p>
         </div>
       </div>
-      {/* Swiper Slider */}
+
       <Swiper
         key={lang}
         effect={"coverflow"}
@@ -79,13 +79,13 @@ function Certificates() {
         data-aos="fade-up"
         breakpoints={{
           0: {
-            slidesPerView: 1.3, // موبايل صغير جداً
+            slidesPerView: 1.3,
           },
           500: {
-            slidesPerView: 2, // من أول تابلت أو موبايل واسع
+            slidesPerView: 2, 
           },
           1024: {
-            slidesPerView: 3, // من أول لابتوب وفوق
+            slidesPerView: 3,
           },
         }}
       >
@@ -116,11 +116,9 @@ function Certificates() {
         ))}
       </Swiper>
 
-      {/* Modal */}
       {open && (
         <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50">
           <div className="relative rounded-xl p-4 max-w-7xl w-[90%] shadow-lg">
-            {/* زرار الإغلاق */}
             <button
               onClick={() => setOpen(false)}
               className="absolute top-4 right-4 sm:top-8 sm:right-8 text-xl sm:text-3xl font-black cursor-pointer text-red-700 hover:text-red-400 transition duration-500 hover:rotate-180 rounded-full w-8 h-8 flex items-center justify-center"
@@ -138,15 +136,12 @@ function Certificates() {
               </svg>
             </button>
 
-            {/* الصورة */}
             <img
               loading="lazy"
               src={certificates[index].src}
               alt={certificates[index].title}
               className="max-h-[80vh] mx-auto rounded-lg"
             />
-
-            {/* العنوان */}
           </div>
         </div>
       )}

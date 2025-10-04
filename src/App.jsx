@@ -10,16 +10,15 @@ import { Routes, Route, useLocation } from "react-router-dom";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
-  const hasScrolled = useRef(false); // عشان يشتغل مرة واحدة بس
+  const hasScrolled = useRef(false);
 
   useEffect(() => {
     if (pathname.startsWith("/project/")) {
       if (!hasScrolled.current) {
         window.scrollTo({ top: 0, behavior: "smooth" });
-        hasScrolled.current = true; // أول مرة بس
+        hasScrolled.current = true; 
       }
     } else {
-      // رجعت للهوم → اعمل reset
       hasScrolled.current = false;
     }
   }, [pathname]);

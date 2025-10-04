@@ -13,10 +13,10 @@ const btns = {
 function Projects() {
   const { t, i18n } = useTranslation();
 
-  const [visibleCount, setVisibleCount] = useState(3); // هيبدأ يعرض 2 بس
+  const [visibleCount, setVisibleCount] = useState(3);
 
   const handleSeeMore = () => {
-    setVisibleCount((prev) => prev + 3); // كل مرة يزود 2
+    setVisibleCount((prev) => prev + 3);
   };
 
   return (
